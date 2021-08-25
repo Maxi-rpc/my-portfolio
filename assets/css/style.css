@@ -1,0 +1,10 @@
+/* Css propio */
+
+:root {
+	--color-primario: #000;
+	--color-secundario: #fff;
+}
+
+ul li {
+	list-style: none;
+}
