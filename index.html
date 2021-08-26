@@ -7,108 +7,131 @@
 		<title>Miranda Maximiliano - Portfolio</title>
 		<!--icon-->
 		<link rel="shortcut icon" href="./assets/img/icon/logo.png" />
+		<!--fontawesome icon-->
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
 			crossorigin="anonymous"
 		/>
+		<!--ionic icon-->
+		<link
+			href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+			rel="stylesheet"
+		/>
 		<!--Normalize CSS-->
 		<link rel="stylesheet" href="./assets/css/normalize.css" />
 		<!--Style-->
 		<!--Bootstrap CSS-->
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
 			crossorigin="anonymous"
 		/>
 		<!--My Style-->
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
 	<body>
-		<!--navbar-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Max</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Bio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Portfolio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contacto</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+		<nav
+			class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+		>
+			<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
+				>Company name</a
+			>
+			<button
+				class="navbar-toggler position-absolute d-md-none collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#sidebarMenu"
+				aria-controls="sidebarMenu"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<input
+				class="form-control form-control-dark w-100"
+				type="text"
+				placeholder="Search"
+				aria-label="Search"
+			/>
+			<ul class="navbar-nav px-3">
+				<li class="nav-item text-nowrap">
+					<a class="nav-link" href="#">Sign out</a>
+				</li>
+			</ul>
 		</nav>
-		<!--//navbar-->
 
-		<!--container-->
-		<div class="contaier">
-			<div class="row mx-0 align-items-center bg-primary">
-				<div class="col-6">
-					<h1>Hola soy Maximiliano Miranda</h1>
-					<h3>Soy <span>Programador(cambiar texto)</span></h3>
-					<h5>Creando contenido para el mundo!!</h5>
-					<h6>Si, ese es mi avatar!</h6>
-					<ul class="list-group list-group-horizontal">
-						<li>
-							<a href="#" class="list-group-item"
-								><i class="fab fa-linkedin-in"></i
-							></a>
-						</li>
-						<li>
-							<a href="#" class="list-group-item"
-								><i class="fab fa-github"></i
-							></a>
-						</li>
-						<li>
-							<a href="#" class="list-group-item"
-								><i class="fab fa-instagram"></i
-							></a>
-						</li>
-						<li>
-							<a href="#" class="list-group-item"
-								><i class="far fa-file-pdf"></i
-							></a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-6">
-					<img
-						class="img-fluid"
-						src="./assets/img/avatar-sinfondo.png"
-						alt=""
-						width="50%"
-					/>
-				</div>
+		<div class="container-fluid">
+			<div class="row">
+				<nav
+					id="sidebarMenu"
+					class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+				>
+					<div class="sidebar-sticky pt-3">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">
+									<i class="icon ion-md-home"></i>
+									Home
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="icon ion-md-person"></i>
+									About
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<span data-feather="shopping-cart"></span>
+									Skills
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<span data-feather="users"></span>
+									Proyect
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<span data-feather="bar-chart-2"></span>
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+					<div
+						class="
+							d-flex
+							justify-content-between
+							flex-wrap flex-md-nowrap
+							align-items-center
+							pt-3
+							pb-2
+							mb-3
+							border-bottom
+						"
+					>
+						<h1 class="h2">Home</h1>
+					</div>
+				</main>
 			</div>
 		</div>
-		<!--//container-->
-
 		<!--Bootstrap JS-->
 		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
 			crossorigin="anonymous"
 		></script>
 		<!--My Script-->
