@@ -19,4 +19,24 @@ tab.addEventListener("click", function (e) {
 
 //text-dinamico
 var textDin: HTMLElement = document.getElementById("text-dinamico");
-console.log(textDin.textContent);
+var listaText: Array<string> = [
+	"Programador",
+	"Desarrollador",
+	"Backend",
+	"Frontend",
+];
+
+var contador: number = 0;
+var maximo: number = listaText.length;
+
+setInterval(function () {
+	if (contador >= maximo) {
+		contador = 1;
+	} else {
+		contador++;
+	}
+
+	textDin.textContent = listaText[contador - 1];
+}, 5000);
+
+console.log(listaText.length);
