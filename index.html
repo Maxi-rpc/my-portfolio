@@ -1,413 +1,402 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miranda Maximiliano - Portfolio</title>
-    <!--icon-->
-    <link rel="shortcut icon" href="./assets/img/icon/logo.png" />
-    <!--fontawesome icon-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <!--ionic icon-->
-    <link
-      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
-      rel="stylesheet"
-    />
-    <!--Normalize CSS-->
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <!--Style-->
-    <!--Bootstrap CSS-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <!--My Style-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <!--navbar-->
-    <nav
-      class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
-    >
-      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
-        >My Portfolio</a
-      >
-      <button
-        class="navbar-toggler position-absolute d-md-none collapsed"
-        type="button"
-        data-toggle="collapse"
-        data-target="#sidebarMenu"
-        aria-controls="sidebarMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Miranda Maximiliano - Portfolio</title>
+		<!--icon-->
+		<link rel="shortcut icon" href="./assets/img/icon/logo.png" />
+		<!--fontawesome icon-->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+		<!--ionic icon-->
+		<link
+			href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+			rel="stylesheet"
+		/>
+		<!--Normalize CSS-->
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<!--Style-->
+		<!--Bootstrap CSS-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<!--My Style-->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<!--navbar-->
+		<nav
+			class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+		>
+			<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
+				>My Portfolio</a
+			>
+			<button
+				class="navbar-toggler position-absolute d-md-none collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#sidebarMenu"
+				aria-controls="sidebarMenu"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#"
-            ><img
-              class="img-fluid"
-              src="./assets/img/avatar-sinfondo.png"
-              alt="avatar"
-              width="39"
-              height="39"
-          /></a>
-        </li>
-      </ul>
-    </nav>
-    <!--//navbar-->
+			<ul class="navbar-nav px-3">
+				<li class="nav-item text-nowrap">
+					<a class="nav-link" href="#"
+						><img
+							class="img-fluid"
+							src="./assets/img/avatar-sinfondo.png"
+							alt="avatar"
+							width="39"
+							height="39"
+					/></a>
+				</li>
+			</ul>
+		</nav>
+		<!--//navbar-->
 
-    <div class="container-fluid">
-      <div class="row">
-        <!--sidebar-->
-        <nav
-          id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
-        >
-          <div class="sidebar-sticky pt-3">
-            <ul class="nav flex-column" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link active"
-                  id="home-tab"
-                  data-toggle="tab"
-                  href="#home"
-                  role="tab"
-                  aria-controls="home"
-                  aria-selected="true"
-                  name="Home"
-                >
-                  <i class="icon ion-md-home"></i>
-                  Home
-                </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="about-tab"
-                  data-toggle="tab"
-                  href="#about"
-                  role="tab"
-                  aria-controls="about"
-                  aria-selected="false"
-                  name="About"
-                >
-                  <i class="icon ion-md-person"></i>
-                  About
-                </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="skills-tab"
-                  data-toggle="tab"
-                  href="#skills"
-                  role="tab"
-                  aria-controls="skills"
-                  aria-selected="false"
-                  name="Skills"
-                >
-                  <i class="icon ion-md-apps"></i>
-                  Skills
-                </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="proyect-tab"
-                  data-toggle="tab"
-                  href="#proyect"
-                  role="tab"
-                  aria-controls="proyect"
-                  aria-selected="false"
-                  name="Proyect"
-                >
-                  <i class="icon ion-md-briefcase"></i>
-                  Proyect
-                </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="contact-tab"
-                  data-toggle="tab"
-                  href="#contact"
-                  role="tab"
-                  aria-controls="contact"
-                  aria-selected="false"
-                  name="Contact"
-                >
-                  <i class="icon ion-md-mail"></i>
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!--/sidebar-->
-
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-          <!--head-content-->
-          <div
-            class="
-              d-flex
-              justify-content-between
-              flex-wrap flex-md-nowrap
-              align-items-center
-              pt-3
-              pb-2
-              mb-3
-              border-bottom
-            "
-          >
-            <h1 class="h2" id="head-content">Home</h1>
-          </div>
-          <!--/head-content-->
-          <!--content-->
-          <div class="tab-content">
-            <!--home-->
-            <div
-              class="tab-pane active"
-              id="home"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-            >
-              <div class="row">
-                <div class="col-8">
-                  <div class="card">
-                    <div class="card-body">
-                      <span class="badge badge-primary">Hola Mundo!</span>
-                      <h5 class="card-title">Soy Maximiliano Miranda</h5>
-                      <h6 class="card-subtitle text-muted mb-2">
-                        Te dejo algunos accesos directos!
-                      </h6>
-					  <div class="my-5"></div>
-                      <a href="#" class="btn btn-primary">
-						  <i class="far fa-file-pdf"></i
-                      ></a>
-                      <a href="#" class="btn btn-primary">
-						  <i class="fab fa-github"></i></i
-                      ></a>
-					  <a href="#" class="btn btn-primary">
-						  <i class="fab fa-linkedin-in"></i>
-					</a>
-					  <a href="#" class="btn btn-primary">
-						  <i class="fab fa-instagram"></i>
-					</a>
-					  <a href="#" class="btn btn-primary">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-					  <a href="#" class="btn btn-primary">
-						  <i class="far fa-envelope"></i>
-					</a>
-					  <a href="#" class="btn btn-primary">
-						  <i class="fab fa-spotify"></i>
-					  </a>
-                    </div>
-                  </div>
-                  <div class="my-3"></div>
-                  <h3>Intro</h3>
-                  <div class="card">
-                    <div class="card-body">
-						<p class="card-text">
-							Esta es una pequeña introduccion a mi Portfolio, encontraras distintas secciones, te dejo un resumen de cada una:
-						</p>
-						<div class="accordion" id="accordionExample">
-							<div class="card">
-							  <div class="card-header" id="headingOne">
-								<h2 class="mb-0">
-								  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		<div class="container-fluid">
+			<div class="row">
+				<!--sidebar-->
+				<nav
+					id="sidebarMenu"
+					class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+				>
+					<div class="sidebar-sticky pt-3">
+						<ul class="nav flex-column" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link active"
+									id="home-tab"
+									data-toggle="tab"
+									href="#home"
+									role="tab"
+									aria-controls="home"
+									aria-selected="true"
+									name="Home"
+								>
+									<i class="icon ion-md-home"></i>
+									Home
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link"
+									id="about-tab"
+									data-toggle="tab"
+									href="#about"
+									role="tab"
+									aria-controls="about"
+									aria-selected="false"
+									name="About"
+								>
+									<i class="icon ion-md-person"></i>
 									About
-								  </button>
-								</h2>
-							  </div>
-						  
-							  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-								<div class="card-body">
-								  En esta seccion encontraras todo lo relacionado a mi vida, mis datos personales, mis estudios y mis experiencias laborales.
-								</div>
-							  </div>
-							</div>
-							<div class="card">
-							  <div class="card-header" id="headingTwo">
-								<h2 class="mb-0">
-								  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link"
+									id="skills-tab"
+									data-toggle="tab"
+									href="#skills"
+									role="tab"
+									aria-controls="skills"
+									aria-selected="false"
+									name="Skills"
+								>
+									<i class="icon ion-md-apps"></i>
 									Skills
-								  </button>
-								</h2>
-							  </div>
-							  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-								<div class="card-body">
-								  En esta seccion encontraras las tecnologias que fui aprendiendo a lo largo de mi carrera profesional, habilidades blandas y porque no mis habilidades personales.
-								</div>
-							  </div>
-							</div>
-							<div class="card">
-							  <div class="card-header" id="headingThree">
-								<h2 class="mb-0">
-								  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link"
+									id="proyect-tab"
+									data-toggle="tab"
+									href="#proyect"
+									role="tab"
+									aria-controls="proyect"
+									aria-selected="false"
+									name="Proyect"
+								>
+									<i class="icon ion-md-briefcase"></i>
 									Proyect
-								  </button>
-								</h2>
-							  </div>
-							  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-								<div class="card-body">
-								  En esta seccion se mostraran todos los proyectos en los que trabaje, algunos con su codigo o link para ver online.
-								</div>
-							  </div>
-							</div>
-						  </div> 
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link"
+									id="contact-tab"
+									data-toggle="tab"
+									href="#contact"
+									role="tab"
+									aria-controls="contact"
+									aria-selected="false"
+									name="Contact"
+								>
+									<i class="icon ion-md-mail"></i>
+									Contact
+								</a>
+							</li>
+						</ul>
 					</div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-body">
-					  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-						  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-						  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-						  <div class="carousel-item active">
-							<img src="./assets/img/avatar-sinfondo.png" class="d-block w-100" alt="avatar">
-						  </div>
-						  <div class="carousel-item">
-							<img src="./assets/img/avatar-sinfondo.png" class="d-block w-100" alt="avatar">
-						  </div>
-						  <div class="carousel-item">
-							<img src="./assets/img/avatar-sinfondo.png" class="d-block w-100" alt="avatar">
-						  </div>
+				</nav>
+				<!--/sidebar-->
+
+				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+					<!--head-content-->
+					<div
+						class="
+							d-flex
+							justify-content-between
+							flex-wrap flex-md-nowrap
+							align-items-center
+							pt-3
+							pb-2
+							mb-3
+							border-bottom
+						"
+					>
+						<h1 class="h2" id="head-content">Home</h1>
+					</div>
+					<!--/head-content-->
+					<!--content-->
+					<div class="tab-content">
+						<!--home-->
+						<div
+							class="tab-pane active"
+							id="home"
+							role="tabpanel"
+							aria-labelledby="home-tab"
+						>
+							<div class="row">
+								<div class="col-8">
+									<div class="card">
+										<div class="card-body">
+											<span class="badge badge-primary">Hola Mundo!</span>
+											<h3 class="card-title">
+												Hola! mi nombre es Maximiliano y soy
+											</h3>
+											<h4 class="card-subtitle text-muted my-2">
+												<span id="text-dinamico">texto</span>
+											</h4>
+											<p class="card-text">Te dejo algunos accesos directos!</p>
+											<div class="my-1"></div>
+											<a href="#" class="btn btn-primary">
+												<i class="far fa-file-pdf"></i>
+											</a>
+											<a href="#" class="btn btn-primary">
+												<i class="fab fa-github"></i>
+											</a>
+											<a href="#" class="btn btn-primary">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+											<a href="#" class="btn btn-primary">
+												<i class="fab fa-instagram"></i>
+											</a>
+											<a href="#" class="btn btn-primary">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+											<a href="#" class="btn btn-primary">
+												<i class="far fa-envelope"></i>
+											</a>
+											<a href="#" class="btn btn-primary">
+												<i class="fab fa-spotify"></i>
+											</a>
+										</div>
+									</div>
+									<div class="my-3"></div>
+									<h3>Intro</h3>
+									<div class="card">
+										<div class="card-body">
+											<p class="card-text">
+												¡Buenas! Les quería comentar un poco sobre mí,
+												apasionado por la tecnología, estudiante autónomo, busco
+												nuevos desafíos que me lleven a buscar nuevas
+												soluciones, siempre aprendiendo para poder brindar el
+												mejor servicio posible.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="card">
+										<div class="card-body">
+											<div
+												id="carouselExampleIndicators"
+												class="carousel slide"
+												data-ride="carousel"
+											>
+												<ol class="carousel-indicators">
+													<li
+														data-target="#carouselExampleIndicators"
+														data-slide-to="0"
+														class="active"
+													></li>
+													<li
+														data-target="#carouselExampleIndicators"
+														data-slide-to="1"
+													></li>
+													<li
+														data-target="#carouselExampleIndicators"
+														data-slide-to="2"
+													></li>
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img
+															src="./assets/img/avatar-sinfondo.png"
+															class="d-block w-100"
+															alt="avatar"
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./assets/img/avatar-sinfondo.png"
+															class="d-block w-100"
+															alt="avatar"
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./assets/img/avatar-sinfondo.png"
+															class="d-block w-100"
+															alt="avatar"
+														/>
+													</div>
+												</div>
+											</div>
+											<p class="card-text">
+												Algunas fotos para que me conozcan!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					  </div>
-					  <p class="card-text">
-						  Algunas fotos para que me conozcan!
-					  </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--//home-->
-            <!--about-->
-            <div
-              class="tab-pane"
-              id="about"
-              role="tabpanel"
-              aria-labelledby="about-tab"
-            >
-              2 tab
-            </div>
-            <!--//about-->
-            <!--skills-->
-            <div
-              class="tab-pane"
-              id="skills"
-              role="tabpanel"
-              aria-labelledby="skills-tab"
-            >
-              3 tab
-            </div>
-            <!--//skills-->
-            <!--proyect-->
-            <div
-              class="tab-pane"
-              id="proyect"
-              role="tabpanel"
-              aria-labelledby="proyect-tab"
-            >
-              4 tab
-            </div>
-            <!--//proyect-->
-            <!--contact-->
-            <div
-              class="tab-pane"
-              id="contact"
-              role="tabpanel"
-              aria-labelledby="contact-tab"
-            >
-              <div class="row">
-                <div class="col-8">
-                  <div class="card">
-                    <div class="card-body">
-                      <span class="badge badge-primary">Hola Mundo!</span>
-                      <h5 class="card-title">Soy Maximiliano Miranda</h5>
-                      <h6 class="card-subtitle text-muted mb-2">
-                        Te dejo el acceso directo de mi cv!
-                      </h6>
-                      <a href="#" class="btn btn-primary"
-                        ><i class="far fa-file-pdf"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="my-3"></div>
-                  <h3>Accesos Directo</h3>
-                  <div class="card">
-                    <div class="card-body"></div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <h6>Accesos Directos</h6>
-                      <ul>
-                        <li>
-                          <a href="https://github.com/Maxi-rpc"
-                            ><i class="fab fa-github"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.linkedin.com/in/maximiliano-g-miranda/"
-                            ><i class="fab fa-linkedin-in"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--//contact-->
-          </div>
-          <!--/content-->
-          <!--footer-->
-          <footer class="">
-            <div class="row">
-              <p>
-                Sitio Web creado por <a href="#">Maximiliano Miranda</a> Todos
-                los derechos reservados - <span id="fecha"></span>
-              </p>
-              <p>- Ver.1</p>
-            </div>
-          </footer>
-          <!--/footer-->
-        </main>
-      </div>
-    </div>
-    <!--Bootstrap JS-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
-    <!--My Script-->
-    <script src="./assets/js/script.js"></script>
-  </body>
+						<!--//home-->
+						<!--about-->
+						<div
+							class="tab-pane"
+							id="about"
+							role="tabpanel"
+							aria-labelledby="about-tab"
+						>
+							2 tab
+						</div>
+						<!--//about-->
+						<!--skills-->
+						<div
+							class="tab-pane"
+							id="skills"
+							role="tabpanel"
+							aria-labelledby="skills-tab"
+						>
+							3 tab
+						</div>
+						<!--//skills-->
+						<!--proyect-->
+						<div
+							class="tab-pane"
+							id="proyect"
+							role="tabpanel"
+							aria-labelledby="proyect-tab"
+						>
+							4 tab
+						</div>
+						<!--//proyect-->
+						<!--contact-->
+						<div
+							class="tab-pane"
+							id="contact"
+							role="tabpanel"
+							aria-labelledby="contact-tab"
+						>
+							<div class="row">
+								<div class="col-8">
+									<div class="card">
+										<div class="card-body">
+											<span class="badge badge-primary">Hola Mundo!</span>
+											<h5 class="card-title">Soy Maximiliano Miranda</h5>
+											<h6 class="card-subtitle text-muted mb-2">
+												Te dejo el acceso directo de mi cv!
+											</h6>
+											<a href="#" class="btn btn-primary"
+												><i class="far fa-file-pdf"></i
+											></a>
+										</div>
+									</div>
+									<div class="my-3"></div>
+									<h3>Accesos Directo</h3>
+									<div class="card">
+										<div class="card-body"></div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="card">
+										<div class="card-body">
+											<h6>Accesos Directos</h6>
+											<ul>
+												<li>
+													<a href="https://github.com/Maxi-rpc"
+														><i class="fab fa-github"></i
+													></a>
+												</li>
+												<li>
+													<a
+														href="https://www.linkedin.com/in/maximiliano-g-miranda/"
+														><i class="fab fa-linkedin-in"></i
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--//contact-->
+					</div>
+					<!--/content-->
+					<!--footer-->
+					<footer class="fixed-bottom">
+						<div class="row justify-content-center bg-dark text-light py-2">
+							<p class="mb-0">
+								Sitio Web creado por
+								<a href="#" class="font-weight-bold">Maximiliano Miranda</a>
+								Todos los derechos reservados - <span id="fecha"></span> -
+								Ver.1.0
+							</p>
+						</div>
+					</footer>
+					<!--/footer-->
+				</main>
+			</div>
+		</div>
+		<!--Bootstrap JS-->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<!--My Script-->
+		<script src="./assets/js/script.js"></script>
+	</body>
 </html>
